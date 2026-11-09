@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <!-- 1. Bootstrap CSS CDN Link -->
+    <style>
+        body {
+            background-color: #fff1dc;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            background-color: #fff9e9;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            border: 3px solid #f4c27a;
+            box-shadow: 0 5px 12px #d9b68c;
+        }
+
+        h1 {
+            color: #d94b4b;
+            font-size: 27px;
+        }
+
+        p {
+            color: #795548;
+            font-size: 14px;
+        }
+
+        input {
+            padding: 12px;
+            width: 80%;
+            border: 2px solid #f2bd75;
+            border-radius: 10px;
+            font-size: 15px;
+            text-align: center;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #df6565;
+        }
+
+        button {
+            background-color: #e85d5d;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c94343;
+        }
+
+        #result {
+            background-color: #ffefd1;
+            color: #754c24;
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            line-height: 2;
+        }
+        .footer {
+            color: #b47a55;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍓 Periodic Table Finder 🍰</h1>
+
+        <p>
+            Welcome to the Element Drive thru!
+            <br>
+            Enter a non-metal element symbol to discover its information.
+        </p>
+
+        <input type="text" id="user_input" placeholder="Enter element symbol (e.g. H)">
+
+        <br>
+
+        <button py-click="show_element">Search Element 🍓</button>
+
+        <div id="result">
+            Your element information will appear here!
+        </div>
+
+        <!-- Footer -->
+            Made with 🍓 and chemistry!
+        </div>
+
+    </div>
+
+    <script type="py" src="./main.py"></script>
+
+</body>
+
+</html>
+```
